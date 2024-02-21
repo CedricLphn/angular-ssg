@@ -1,0 +1,9 @@
+<div>
+  <h1>{{ pokemon.name }}</h1>
+  <img [src]="pokemon.image" [alt]="pokemon.name">
+<ul>
+  <li *ngFor="let move of pokemon.apiTypes">
+    {{ move.name }}
+  </li>
+</ul>
+</div>

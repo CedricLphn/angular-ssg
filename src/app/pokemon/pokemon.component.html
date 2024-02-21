@@ -1,0 +1,8 @@
+<div>
+  Voici les 10 premiers pokemons !
+</div>
+<div>
+  <ul>
+    <li *ngFor="let pokemon of pokemons"><a [routerLink]="pokemon.id.toString()">{{ pokemon.name }}</a></li>
+  </ul>
+</div>
